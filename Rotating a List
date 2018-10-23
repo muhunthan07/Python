@@ -1,0 +1,16 @@
+def rotate(list,order):
+    for i in range(0,order):
+        j=0
+        n=len(list)-1
+        while j<n:
+            t=list[j]
+            list[j]=list[j+1]
+            list[j+1]=t
+            j=j+1
+        print(list)
+    return 
+list=[1,2,3,4,5,7]
+print("The current LIST:",list)
+order=int(input("Enter how much time the list want to Rotate: "))
+print("After Rotation :-")
+rotate(list,order)
