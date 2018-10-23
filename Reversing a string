@@ -1,0 +1,9 @@
+def string(word):
+    new=""
+    i=len(word)
+    while i>0:
+        new+=word[i-1]
+        i=i-1
+    return new
+word=str(input("Enter the string: "))
+print("reversed string:",string(word))
